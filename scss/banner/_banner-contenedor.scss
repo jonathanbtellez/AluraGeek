@@ -1,0 +1,13 @@
+.banner__contenedor{
+    color: $fuentePrimario;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 70vh;
+    justify-content: flex-end;
+    padding:  1.5rem 0;
+    max-width: 1200px;
+    margin: auto;
+    width: 90%;
+
+}

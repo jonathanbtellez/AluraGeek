@@ -1,0 +1,14 @@
+.header__contenedor__buscar{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+}
+@media (min-width: 768) {
+    .header__contenedor__buscar{
+        width: 60%;
+        margin: 0;
+        background: #000;
+        justify-content: flex-end;
+    }
+}

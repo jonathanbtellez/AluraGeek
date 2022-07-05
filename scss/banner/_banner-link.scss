@@ -1,0 +1,16 @@
+.banner__link{
+    width: 25%;
+    font-size:$fuenteParrafoMovil;
+    font-weight: bold;
+}
+
+@media (min-width: 768px){
+    .banner__link{
+        width: 15%;
+    }
+}
+@media (min-width: 992px){
+    .banner__link{
+        font-size: $fuenteDesktopTitulo;
+    }
+}

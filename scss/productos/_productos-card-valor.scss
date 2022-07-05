@@ -1,0 +1,11 @@
+.productos__card__valor {
+    font-size: $fuenteParrafoMovil;
+    margin: 5px 5%;
+    line-height: 1rem;
+}
+
+@media (min-width: 992px) {
+    .productos__card__valor {
+        font-size: $fuenteDesktopParrafo;
+    }
+}

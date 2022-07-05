@@ -1,0 +1,9 @@
+.contacto__logo{
+    width: 40%;
+    filter: hue-rotate(255deg) grayscale(40%) contrast(0%);
+}
+@media (min-width: 768px){
+    .contacto__logo{
+        width: 100%;
+    }
+}

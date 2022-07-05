@@ -1,0 +1,13 @@
+.productos__card{
+    background: $fondoOscuro;
+    box-shadow: $sombra;
+    border-radius: 7px;
+}
+.productos--ocultos{
+    display: none;
+}
+@media (min-width: 992px){
+    .productos--ocultos{
+        display: block;
+    }
+}

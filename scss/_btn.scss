@@ -1,0 +1,17 @@
+.btn{
+    border: 1px solid $fondo;
+    padding: .7rem 1.2rem;
+    background: $fondo;
+    border-radius: 5px;
+    box-shadow: $sombra;
+}
+.btn--blanco{
+    text-decoration: none;
+    color: $fondo;
+    background: $fuenteSecunadario;
+}
+.btn:hover{
+    text-decoration: underline;
+    color: $fondo;
+    background: $fuenteSecunadario;
+}

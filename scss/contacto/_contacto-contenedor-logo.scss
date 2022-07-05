@@ -1,0 +1,12 @@
+.contacto__contenedor__logo{
+    width: 100%;
+    margin: 0 0 .7rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px){
+    .contacto__contenedor__logo{
+        margin: 0;
+    }
+}

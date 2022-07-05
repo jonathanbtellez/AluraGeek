@@ -1,0 +1,19 @@
+.formulario__link{
+    text-decoration: none;
+    width: 35%;
+    color: $fuenteSecunadario;
+    font-size:$fuenteParrafoMovil;
+    font-weight: bold;
+    align-items: center;
+    margin: auto;
+}
+@media (min-width: 768px){
+    .formulario__link{
+        width: 20%;
+    }
+}
+@media (min-width: 992px){
+    .formulario__link{
+        font-size: $fuenteDesktopParrafo;
+    }
+}

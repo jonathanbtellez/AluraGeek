@@ -1,0 +1,76 @@
+$fuenteTienda :'Raleway', sans-serif;
+$fondo: #202020;
+$fuentePrimario:#fdfdfd;
+$fuenteSecunadario:#c2c5aa;
+$fondoOscuro:#333533;
+$fuenteTitulosMovil: 1.1rem;
+$fuenteParrafoMovil:0.8rem;
+$sombra:2px 3px 10px 1px rgba(194,197,170,0.15);
+$fuenteDesktopTitulo: 1.3rem;
+$fuenteDesktopParrafo: 1rem;
+
+@import 'generales';
+@import 'btn';
+
+///////////////////////////////////////
+///////////  HEADER  //////////////////
+///////////////////////////////////////
+@import 'header/header.scss';
+@import 'header/header-contenedor.scss';
+@import 'header/header-logo.scss';
+@import 'header/header-contenedor-contenido.scss';
+@import 'header/header-link.scss';
+@import 'header/header-icono.scss';
+@import 'header/header-buscar';
+@import 'header/header-contenedor-buscar';
+
+///////////////////////////////////////
+///////////// BANNER //////////////////
+///////////////////////////////////////
+@import 'banner/banner';
+@import 'banner/banner-contenedor';
+@import 'banner/banner-titulo';
+@import 'banner/banner-descripcion';
+@import 'banner/banner-link';
+
+///////////////////////////////////////
+/////////// PRODUCTOS /////////////////
+///////////////////////////////////////
+
+@import 'productos/productos';
+@import 'productos/productos-contenedor-titulo';
+@import 'productos/productos-titulo';
+@import 'productos/productos-link';
+@import 'productos/productos-contenedor-card';
+@import 'productos/productos-card';
+@import 'productos/productos-card-imagen';
+@import 'productos/card-imagen';
+@import 'productos/productos-card-titulo';
+@import 'productos/productos-card-valor';
+@import 'productos/productos-card-link';
+
+
+///////////////////////////////////////
+/////////// CONTACTO  /////////////////
+///////////////////////////////////////
+
+@import 'contacto/contacto.scss';
+@import 'contacto/contacto-contenedor';
+@import 'contacto/contacto-sobre-nosotros';
+@import 'contacto/contacto-contenedor-logo';
+@import 'contacto/contacto-logo';
+@import 'contacto/lista-sobre-nosotros';
+@import 'contacto/lista-sobre-nosotros-item';
+@import 'contacto/formulario__contenedor__campos';
+@import 'contacto/formulario-contedor-titulo';
+@import 'contacto/formulario-campos';
+@import 'contacto/formulario-campo';
+@import 'contacto/formulario-link';
+@import 'contacto//contacto-formulario';
+
+
+///////////////////////////////////////
+///////////// FOOTER  /////////////////
+///////////////////////////////////////
+//@import 'footer';
+@import 'footer/footer';

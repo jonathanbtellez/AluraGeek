@@ -1,0 +1,16 @@
+.lista__sobre__nosotros{
+    text-align: center;
+    font-size: $fuenteParrafoMovil;
+    line-height: 1.3rem;
+}
+@media (min-width: 768px){
+    .lista__sobre__nosotros{
+        text-align: left;
+        margin-top: 1rem;
+    }
+}
+@media (min-width: 992px){
+    .lista__sobre__nosotros{
+        font-size: $fuenteDesktopParrafo;
+    }
+}

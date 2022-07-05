@@ -1,0 +1,10 @@
+.banner__descripcion{
+    font-size: $fuenteTitulosMovil;
+    text-shadow: 1px 1px 2px #999;
+}
+
+@media (min-width: 992px){
+    .banner__descripcion{
+        font-size: $fuenteDesktopTitulo;
+    }
+}

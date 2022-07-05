@@ -1,0 +1,7 @@
+.lista__sobre__nosotros__item{
+    color: $fuenteSecunadario;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
