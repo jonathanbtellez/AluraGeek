@@ -115,7 +115,7 @@ body {
   background-repeat: no-repeat; }
 
 .banner__contenedor {
-  color: #fdfdfd;
+  color: #fff;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -158,7 +158,7 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: auto;
-  color: #fdfdfd; }
+  color: #fff; }
 
 .productos__contenedor__titulo {
   display: flex;
@@ -238,7 +238,7 @@ body {
 
 .contacto {
   background: #333533;
-  color: #fdfdfd;
+  color: #fff;
   padding: 1rem 0; }
 
 .contacto__contenedor {
@@ -287,6 +287,9 @@ body {
 @media (min-width: 992px) {
   .lista__sobre__nosotros {
     font-size: 1rem; } }
+.lista__sobre__nosotros__link {
+  text-decoration: none; }
+
 .lista__sobre__nosotros__item {
   color: #c2c5aa;
   text-decoration: none; }
@@ -391,7 +394,7 @@ body {
   width: 90%;
   margin: auto;
   padding: 2rem 0;
-  color: #fdfdfd;
+  color: #fff;
   font-size: 0.8rem;
   text-align: center;
   font-weight: lighter; }

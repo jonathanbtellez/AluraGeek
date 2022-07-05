@@ -1,6 +1,6 @@
 $fuenteTienda :'Raleway', sans-serif;
 $fondo: #202020;
-$fuentePrimario:#fdfdfd;
+$fuentePrimario:#fff;
 $fuenteSecunadario:#c2c5aa;
 $fondoOscuro:#333533;
 $fuenteTitulosMovil: 1.1rem;
@@ -60,6 +60,7 @@ $fuenteDesktopParrafo: 1rem;
 @import 'contacto/contacto-contenedor-logo';
 @import 'contacto/contacto-logo';
 @import 'contacto/lista-sobre-nosotros';
+@import 'contacto/lista-sobre-nosotros-link';
 @import 'contacto/lista-sobre-nosotros-item';
 @import 'contacto/formulario__contenedor__campos';
 @import 'contacto/formulario-contedor-titulo';
