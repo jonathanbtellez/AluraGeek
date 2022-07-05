@@ -238,7 +238,8 @@ body {
 
 .contacto {
   background: #333533;
-  color: #fdfdfd; }
+  color: #fdfdfd;
+  padding: 1rem 0; }
 
 .contacto__contenedor {
   width: 90%;
@@ -327,7 +328,8 @@ body {
   outline: none;
   border: none;
   font-family: "Raleway", sans-serif;
-  width: auto; }
+  width: 100%;
+  margin: auto; }
   .formulario__campos ::placeholder {
     color: #c2c5aa; }
   .formulario__campos :focus {
@@ -340,7 +342,7 @@ body {
 .formulario__campo {
   margin: .5rem 0;
   background: #202020;
-  padding: .7rem;
+  padding: 3%;
   font-size: 0.8rem;
   color: #c2c5aa;
   width: auto; }
@@ -349,7 +351,7 @@ body {
   font-size: 0.8rem;
   border: none;
   font-family: "Raleway", sans-serif;
-  width: 100%; }
+  width: calc(100%-3%); }
 
 .formulario--textarea {
   font-size: 0.8rem;
@@ -358,8 +360,8 @@ body {
   width: auto;
   min-height: 20vh;
   max-height: 20vh;
-  min-width: 100%;
-  max-width: 100%; }
+  min-width: calc(100%-3%);
+  max-width: calc(100%-3%); }
 
 @media (min-width: 992px) {
   .formulario__campo {

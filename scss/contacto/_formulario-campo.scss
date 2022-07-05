@@ -1,7 +1,7 @@
 .formulario__campo{
     margin: .5rem 0;
     background: $fondo;
-    padding: .7rem;
+    padding: 3%;
     font-size: $fuenteParrafoMovil;
     color: $fuenteSecunadario;
     width: auto;
@@ -11,7 +11,7 @@
     font-size: $fuenteParrafoMovil;
     border: none;
     font-family: $fuenteTienda;
-    width: 100%;
+    width: calc(100%-3%);
 }
 .formulario--textarea{
     font-size: $fuenteParrafoMovil;
@@ -20,8 +20,8 @@
     width: auto;
     min-height: 20vh;
     max-height: 20vh;
-    min-width: 100%;
-    max-width: 100%;
+    min-width: calc(100%-3%);
+    max-width: calc(100%-3%);
 }
 
 @media (min-width: 992px){
