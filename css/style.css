@@ -109,7 +109,7 @@ body {
     background: #000;
     justify-content: flex-end; } }
 .banner {
-  background: url("../../img/banner.jpg") #241023;
+  background: url("/img/banner.jpg") #241023;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
