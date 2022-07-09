@@ -215,6 +215,8 @@ body {
   opacity: 0.8;
   border-radius: 7px 7px 0 0; }
 
+.card__imagen:hover{opacity:1;}
+
 .productos__card__titulo {
   font-size: 0.8rem;
   margin: 5px 5%;
