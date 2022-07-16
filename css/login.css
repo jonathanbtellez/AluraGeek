@@ -19,6 +19,11 @@ body {
   color: #202020;
   background: #c2c5aa; }
 
+.btn--formulario {
+  width: 30%;
+  margin: auto;
+  margin-bottom: 1rem; }
+
 .btn:hover {
   text-decoration: underline;
   color: #202020;
@@ -130,7 +135,21 @@ body {
 .login__formulario {
   display: flex;
   flex-direction: column;
-  margin: auto; }
+  margin: auto;
+  width: 50%; }
+
+.login__formulario__campo {
+  margin: 1rem 0;
+  background: #333533;
+  padding: 3%;
+  font-size: 1rem;
+  color: #c2c5aa;
+  width: auto;
+  border: none;
+  outline: none; }
+  .login__formulario__campo::placeholder {
+    font-size: 1rem;
+    color: #c2c5aa; }
 
 .contacto {
   background: #333533;

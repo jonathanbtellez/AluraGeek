@@ -1,0 +1,14 @@
+.login__formulario__campo{
+    margin: 1rem 0;
+    background: $fondoOscuro;
+    padding: 3%;
+    font-size: $fuenteDesktopParrafo;
+    color: $fuenteSecunadario;
+    width: auto;
+    border: none;
+    outline: none;
+    &::placeholder{
+        font-size: $fuenteDesktopParrafo;
+        color: $fuenteSecunadario;
+    }
+}

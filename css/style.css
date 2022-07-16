@@ -19,6 +19,11 @@ body {
   color: #202020;
   background: #c2c5aa; }
 
+.btn--formulario {
+  width: 30%;
+  margin: auto;
+  margin-bottom: 1rem; }
+
 .btn:hover {
   text-decoration: underline;
   color: #202020;
@@ -223,8 +228,6 @@ body {
   opacity: 0.8;
   border-radius: 7px 7px 0 0;
   transition: all 0.3s ease-in; }
-
-.card__imagen:hover{opacity:1;}
 
 .productos__card__titulo {
   font-size: 0.8rem;

@@ -11,6 +11,12 @@
     color: $fondo;
     background: $fuenteSecunadario;
 }
+
+.btn--formulario{
+    width: 30%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
 .btn:hover{
     text-decoration: underline;
     color: $fondo;
