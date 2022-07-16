@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/icono.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>AluraGeek</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__contenedor">
+            <div class="header__contenedor__contenido">
+                <img class="header__logo" src="img/Logo.png" alt="">
+                <a id="btn-login" href="index.html" class="header__link btn"><i class="fa-solid fa-house-chimney header__link--icono"></i></i>HOME</a>
+            </div>
+            <div class="header__contenedor__buscar">
+                <input type="text" class="header__buscar" name="Buscar" placeholder="Buscar en AluraGeek">
+                <i class="fa-solid fa-magnifying-glass header__icono"></i>
+            </div>
+        </div>
+    </header>
+    <main>  
+        <section class="login">
+            <div class="login__contenedor contenedor">
+                <div class="contenedor__titulo">
+                    <div class="login__titulo titulo">Iniciar sesion</div>
+                </div>
+                <div class="contenedor__formulario">
+                    <form class="login__formulario">
+                        <label for="email">Correo electronico</label>
+                        <input type="text" name="email" id="" class="login__formulario__campo" placeholder="Escriba su correo electronico">
+                        <label for="Contraseña">Contraseña</label>
+                        <input type="password" name="contraseña" id="" class=".login__formulario__campo" placeholder="Escriba su contraseña">
+                        <button type="submit" class="btn__login btn btn--blanco">Iniciar sesion</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="registrate">
+            <div class="registrate__contenedor contenedor">
+                <div class="contenedor__titulo">
+                    <div class="registrate__titulo titulo">Registrate</div>
+                </div>
+                <div class="contenedor__formulario">
+                    <form class="registrate__formulario">
+                        <label for="email">Correo electronico</label>
+                        <input type="text" name="email" id="" class="registrate__formulario__campo" placeholder="Escriba su correo electronico">
+                        <label for="contraseña">Contraseña</label>
+                        <input type="password" name="contraseña" id="" class=".registrate__formulario__campo" placeholder="Escriba su contraseña">
+                        <label for="contraseña2">Contraseña</label>
+                        <input type="password" name="contraseña2" id="" class=".registrate__formulario__campo" placeholder="Escriba su contraseña nuevamente">
+                        <button type="submit" class="btn__registrate btn btn--blanco">Registrate</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto">
+            <div class="contacto__contenedor">
+                <div class="contacto__sobre__nosotros">
+                    <div class="contacto__contenedor__logo">
+                        <img class="contacto__logo" src="img/Logo.png" alt="Logo AluraGeek">
+                    </div>
+                    <div class="formulario__contedor__titulo">
+                        <h2 class="formulario__titulo">Hable con nosotros</h2>
+                    </div>
+                    <ul class="lista__sobre__nosotros">
+                        <a href="#" class="lista__sobre__nosotros__link"><li class="lista__sobre__nosotros__item">Quienes somos</li></a>
+                        <a href="#" class="lista__sobre__nosotros__link"><li class="lista__sobre__nosotros__item">Politica de privacidad</li></a>
+                        <a href="#" class="lista__sobre__nosotros__link"><li class="lista__sobre__nosotros__item">Programa de fidelidad</li></a>
+                        <a href="#" class="lista__sobre__nosotros__link"><li class="lista__sobre__nosotros__item">Nuestras tiendas</li></a>
+                        <a href="#" class="lista__sobre__nosotros__link"><li class="lista__sobre__nosotros__item">Quiero ser franquiciado</li></a>
+                        <a href="#" class="lista__sobre__nosotros__link"><li class="lista__sobre__nosotros__item">Anuncie aqui</li></a>
+                    </ul>
+                </div>
+                <div class="contacto__formulario">
+                    <div class="formulario__contenedor__campos">
+                        <form class="formulario__campos">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" class="formulario__campo formulario--input"
+                                placeholder="Ingresa tu nombre">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" class="formulario__campo formulario--textarea"
+                                placeholder="Ingresa tu mensaje"></textarea>
+                            <a href="#" class="formulario__link btn">Enviar mensaje</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__parrafo">Creado por &copy; Jonathan Tellez 2022</p>
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/c88268524c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

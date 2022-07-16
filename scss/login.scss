@@ -25,33 +25,17 @@ $fuenteDesktopParrafo: 1rem;
 @import 'index/header/header-contenedor-buscar';
 
 ///////////////////////////////////////
-///////////// BANNER //////////////////
-///////////////////////////////////////
-@import 'index/banner/banner';
-@import 'index/banner/banner-contenedor';
-@import 'index/banner/banner-titulo';
-@import 'index/banner/banner-descripcion';
-@import 'index/banner/banner-link';
-
-///////////////////////////////////////
-/////////// PRODUCTOS /////////////////
+/////////////  MAIN  //////////////////
 ///////////////////////////////////////
 
-@import 'index/productos/productos';
-@import 'index/productos/productos-contenedor-titulo';
-@import 'index/productos/productos-titulo';
-@import 'index/productos/productos-link';
-@import 'index/productos/productos-contenedor-card';
-@import 'index/productos/productos-card';
-@import 'index/productos/productos-card-imagen';
-@import 'index/productos/card-imagen';
-@import 'index/productos/productos-card-titulo';
-@import 'index/productos/productos-card-valor';
-@import 'index/productos/productos-card-link';
+@import 'main/login/login-contenedor';
+@import 'main/login/contenedor-titulos';
+@import 'main/formulario/contenedor-formulario';
+@import 'main/formulario/login-formulario';
 
 
 ///////////////////////////////////////
-/////////// CONTACTO  /////////////////
+/////////////  CONTACTO  //////////////
 ///////////////////////////////////////
 
 @import 'index/contacto/contacto.scss';
