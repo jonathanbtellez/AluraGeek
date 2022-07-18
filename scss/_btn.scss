@@ -13,7 +13,7 @@
 }
 
 .btn--formulario{
-    width: 30%;
+    width: 50%;
     margin: auto;
     margin-bottom: 1rem;
 }
@@ -21,4 +21,11 @@
     text-decoration: underline;
     color: $fondo;
     background: $fuenteSecunadario;
+}
+
+@media (min-width: 768px){
+    .btn--formulario{
+        width: 30%;
+        font-size: $fuenteDesktopParrafo;
+    }
 }

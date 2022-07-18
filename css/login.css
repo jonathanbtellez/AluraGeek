@@ -20,7 +20,7 @@ body {
   background: #c2c5aa; }
 
 .btn--formulario {
-  width: 30%;
+  width: 50%;
   margin: auto;
   margin-bottom: 1rem; }
 
@@ -29,6 +29,10 @@ body {
   color: #202020;
   background: #c2c5aa; }
 
+@media (min-width: 768px) {
+  .btn--formulario {
+    width: 30%;
+    font-size: 1rem; } }
 .header {
   background: #333533;
   color: #c2c5aa; }
@@ -123,34 +127,52 @@ body {
 .contenedor__titulo {
   display: flex;
   justify-content: center;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 600;
   padding: 2rem 0; }
 
+@media (min-width: 768px) {
+  .contenedor__titulo {
+    font-size: 1.3rem; } }
 .contenedor__formulario {
   display: flex;
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-bottom: 1rem; }
 
+@media (min-width: 768px) {
+  .contenedor__formulario {
+    font-size: 1rem; } }
 .login__formulario {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 50%; }
+  width: 100%; }
 
+@media (min-width: 768px) {
+  .login__formulario {
+    width: 75%; } }
+@media (min-width: 992px) {
+  .login__formulario {
+    width: 60%; } }
 .login__formulario__campo {
   margin: 1rem 0;
   background: #333533;
   padding: 3%;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #c2c5aa;
   width: auto;
   border: none;
   outline: none; }
   .login__formulario__campo::placeholder {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #c2c5aa; }
 
+@media (min-width: 768px) {
+  .login__formulario__campo {
+    font-size: 1rem; }
+    .login__formulario__campo::placeholder {
+      font-size: 1rem;
+      color: #c2c5aa; } }
 .contacto {
   background: #333533;
   color: #fff;

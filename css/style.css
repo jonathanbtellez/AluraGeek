@@ -20,7 +20,7 @@ body {
   background: #c2c5aa; }
 
 .btn--formulario {
-  width: 30%;
+  width: 50%;
   margin: auto;
   margin-bottom: 1rem; }
 
@@ -29,6 +29,10 @@ body {
   color: #202020;
   background: #c2c5aa; }
 
+@media (min-width: 768px) {
+  .btn--formulario {
+    width: 30%;
+    font-size: 1rem; } }
 .header {
   background: #333533;
   color: #c2c5aa; }

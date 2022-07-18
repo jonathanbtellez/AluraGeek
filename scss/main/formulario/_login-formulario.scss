@@ -2,5 +2,17 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 50%;
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    .login__formulario{
+        width: 75%;
+    }
+}
+
+@media (min-width: 992px){
+    .login__formulario{
+        width: 60%;
+    }
 }
