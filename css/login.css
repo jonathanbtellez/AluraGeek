@@ -146,7 +146,9 @@ body {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 100%; }
+  width: 100%;
+  color: #fff;
+  font-weight: lighter; }
 
 @media (min-width: 768px) {
   .login__formulario {
