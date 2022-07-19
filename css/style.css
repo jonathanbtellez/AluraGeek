@@ -233,6 +233,24 @@ body {
   border-radius: 7px 7px 0 0;
   transition: all 0.3s ease-in; }
 
+.productos__iconos {
+  display: none;
+  justify-content: space-evenly;
+  margin: .5rem 0;
+  transition: all .5s ease; }
+
+.icono--red {
+  transition: all .3s ease;
+  color: #D64933; }
+  .icono--red:hover {
+    transform: scale(1.2); }
+
+.icono--gris {
+  transition: all .3s ease;
+  color: #888; }
+  .icono--gris:hover {
+    transform: scale(1.2); }
+
 .productos__card__titulo {
   font-size: 0.8rem;
   margin: 5px 5%;
