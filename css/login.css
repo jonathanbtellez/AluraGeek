@@ -12,7 +12,8 @@ body {
   background: #202020;
   border-radius: 5px;
   box-shadow: 2px 3px 10px 1px rgba(194, 197, 170, 0.15);
-  cursor: pointer; }
+  cursor: pointer;
+  text-align: center; }
 
 .btn--blanco {
   text-decoration: none;
@@ -161,6 +162,7 @@ body {
   background: #333533;
   padding: 3%;
   font-size: 0.8rem;
+  font-family: "Raleway", sans-serif;
   color: #c2c5aa;
   width: auto;
   border: none;
@@ -169,12 +171,35 @@ body {
     font-size: 0.8rem;
     color: #c2c5aa; }
 
+.campo--textarea {
+  min-width: 94%;
+  max-width: 94%;
+  min-height: 10vh;
+  max-height: 10vh; }
+
 @media (min-width: 768px) {
   .login__formulario__campo {
     font-size: 1rem; }
     .login__formulario__campo::placeholder {
       font-size: 1rem;
       color: #c2c5aa; } }
+.login__info {
+  display: flex;
+  text-align: center;
+  font-size: 0.8rem;
+  flex-direction: column;
+  line-height: 1rem; }
+  .login__info p {
+    padding: 1rem; }
+
+@media (min-width: 768px) {
+  .login__info {
+    width: 60%;
+    margin: auto;
+    font-size: 1rem; } }
+@media (min-width: 992px) {
+  .login__info {
+    width: 50%; } }
 .contacto {
   background: #333533;
   color: #fff;

@@ -1,0 +1,22 @@
+.login__info{
+    display: flex;
+    text-align: center;
+    font-size:$fuenteParrafoMovil;
+    flex-direction: column;
+    line-height: 1rem;
+    p{
+        padding: 1rem;
+    }
+}
+@media (min-width: 768px){
+    .login__info{
+        width: 60%;
+        margin: auto;
+        font-size: $fuenteDesktopParrafo;
+    }
+}
+@media (min-width: 992px){
+    .login__info{
+        width: 50%;
+    }
+}
