@@ -1,0 +1,10 @@
+.productos__link{
+    text-decoration: none;
+    font-size: $fuenteTitulosMovil;
+    color: $fuenteSecunadario;
+}
+@media (min-width: 992px){
+    .productos__link{
+        font-size: $fuenteDesktopTitulo;
+    }   
+}

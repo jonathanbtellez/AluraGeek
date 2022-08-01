@@ -1,0 +1,22 @@
+.productos__card{
+    background: $fondoOscuro;
+    box-shadow: $sombra;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+.productos__card:hover{
+    transform: scale(1.03);
+    .card__imagen{
+        opacity: 1; 
+        transform: scale(1.04);
+    }
+}
+
+.productos--ocultos{
+    display: none;
+}
+@media (min-width: 992px){
+    .productos--ocultos{
+        display: block;
+    }
+}

@@ -1,0 +1,13 @@
+.contenedor__titulo{
+    display: flex;
+    justify-content: center;
+    font-size: $fuenteTitulosMovil;
+    font-weight: 600;
+    padding: 2rem 0;
+}
+
+@media (min-width: 768px){
+    .contenedor__titulo{
+        font-size: $fuenteDesktopTitulo;
+    }
+}

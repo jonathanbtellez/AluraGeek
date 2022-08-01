@@ -1,0 +1,15 @@
+.header__link{
+    color: $fuenteSecunadario;
+    font-size: $fuenteParrafoMovil;
+    text-decoration: none;
+    text-transform: lowercase;
+    .header__link--icono{
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 992px){
+    .header__link{
+        font-size: $fuenteDesktopTitulo;
+    }
+}

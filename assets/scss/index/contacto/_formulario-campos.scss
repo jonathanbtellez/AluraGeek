@@ -1,0 +1,27 @@
+.formulario__campos{
+    display: flex;
+    flex-direction: column;
+    font-size: $fuenteParrafoMovil;
+    margin-bottom: 1rem;
+    font-weight: lighter;
+    outline: none;
+    border: none;
+    font-family: $fuenteTienda;
+    width: 100%;
+    margin: auto;
+
+    ::placeholder{
+        color: $fuenteSecunadario;
+    }
+    :focus{
+        border: none;
+        outline: none;
+    }
+}
+
+@media (min-width: 992px){
+    .formulario__campos{
+        font-size: $fuenteDesktopParrafo;
+    }    
+}
+

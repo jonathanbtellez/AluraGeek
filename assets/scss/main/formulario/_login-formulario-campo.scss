@@ -1,0 +1,31 @@
+.login__formulario__campo{
+    margin: 1rem 0;
+    background: $fondoOscuro;
+    padding: 3%;
+    font-size: $fuenteParrafoMovil;
+    font-family: $fuenteTienda;
+    color: $fuenteSecunadario;
+    width: auto;
+    border: none;
+    outline: none;
+    &::placeholder{
+        font-size: $fuenteParrafoMovil;
+        color: $fuenteSecunadario;
+    }
+}
+.campo--textarea{
+    min-width:94%;
+    max-width: 94%;
+    min-height: 10vh;
+    max-height: 10vh;
+}
+
+@media (min-width: 768px){
+    .login__formulario__campo{
+        font-size: $fuenteDesktopParrafo;
+        &::placeholder{
+            font-size: $fuenteDesktopParrafo;
+            color: $fuenteSecunadario;
+        }
+    }
+}

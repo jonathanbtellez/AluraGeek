@@ -1,0 +1,19 @@
+.header__contenedor__contenido{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+@media (min-width: 768px) {
+    .header__contenedor__contenido{
+        width: 35%;
+        justify-content: space-between;
+    }
+    .header__contenedor__contenido--login{
+        width: 80%;
+        margin: auto;
+        
+    }
+}

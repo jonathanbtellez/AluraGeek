@@ -1,0 +1,15 @@
+.footer{
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0;
+    color: $fuentePrimario;
+    font-size: $fuenteParrafoMovil;
+    text-align: center;
+    font-weight: lighter;
+}
+
+@media (min-width: 768px){
+    .footer{
+        font-size: $fuenteTitulosMovil;
+    }
+}

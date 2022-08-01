@@ -1,0 +1,10 @@
+.productos__titulo{
+    font-size: $fuenteTitulosMovil;
+    font-weight: bold;
+}
+
+@media (min-width: 992px){
+    .productos__titulo{
+        font-size: $fuenteDesktopTitulo;
+    }
+}

@@ -1,0 +1,30 @@
+.formulario__campo{
+    margin: .5rem 0;
+    background: $fondo;
+    padding: 3%;
+    font-size: $fuenteParrafoMovil;
+    color: $fuenteSecunadario;
+    width: auto;
+}
+.formulario--input{
+    font-size: $fuenteParrafoMovil;
+    border: none;
+    font-family: $fuenteTienda;
+    width: 94%;
+}
+.formulario--textarea{
+    font-size: $fuenteParrafoMovil;
+    border: none;
+    font-family: $fuenteTienda;
+    width: auto;
+    min-height: 20vh;
+    max-height: 20vh;
+    min-width: 94%;
+    max-width: 94%;
+}
+
+@media (min-width: 992px){
+    .formulario__campo{
+        font-size: $fuenteDesktopParrafo;
+    }   
+}

@@ -1,0 +1,23 @@
+.formulario__contedor__titulo{
+    width: 100;
+    font-size: $fuenteTitulosMovil;
+    font-weight: 600;
+    padding: 1rem 0;
+    color:$fuenteSecunadario;
+    align-items: center;
+    margin: auto;
+}
+
+@media (min-width: 768px){
+    .formulario__contedor__titulo{
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px){
+    .formulario__contedor__titulo{
+        font-size: $fuenteDesktopTitulo;
+    }
+}

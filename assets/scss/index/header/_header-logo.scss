@@ -1,0 +1,25 @@
+.header__logo{
+    width: 35%;
+    filter: hue-rotate(255deg) grayscale(40%) contrast(0%);
+}
+.header__logo--login{
+    width: 25%;
+}
+
+@media (min-width: 768px){
+    .header__logo{
+        width: 45%;
+    }
+    .header__logo--login{
+        width: 25%;
+    }
+}
+
+@media (min-width: 992px){
+    .header__logo{
+        width: 50%;
+    }
+    .header__logo--login{
+        width: 25%;
+    }
+}

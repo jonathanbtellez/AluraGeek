@@ -1,0 +1,11 @@
+.contenedor__formulario{
+    display: flex;
+    font-size: $fuenteParrafoMovil;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px){
+    .contenedor__formulario{
+        font-size: $fuenteDesktopParrafo;
+    }
+}

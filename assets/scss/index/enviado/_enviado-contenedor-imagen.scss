@@ -1,0 +1,16 @@
+.enviado__contenedor__imagen{
+    width: 80%;
+    margin: auto;
+}
+
+@media (min-width: 768px){
+    .enviado__contenedor__imagen{
+        width: 40%;
+    }
+}
+
+@media (min-width: 992px){
+    .formulario__contedor__titulo{
+        font-size: $fuenteDesktopTitulo;
+    }
+}

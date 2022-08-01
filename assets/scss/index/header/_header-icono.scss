@@ -1,0 +1,12 @@
+.header__icono{
+    cursor: pointer;
+    border-radius: 50%;
+    padding: .8rem;
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 992px){
+    .header__icono{
+        font-size: $fuenteDesktopTitulo;
+    }
+}

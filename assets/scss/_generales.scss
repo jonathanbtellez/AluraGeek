@@ -1,0 +1,12 @@
+body{
+    box-sizing: border-box;
+    font-family: $fuenteTienda;
+    background: $fondo;
+}
+.invisible{
+    display:none;
+}
+
+.formulario__error{
+    color:red;
+}

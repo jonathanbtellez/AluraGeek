@@ -1,0 +1,23 @@
+.header__buscar{
+    background: $fondoOscuro;
+    border: none;
+    border-radius: 1rem;
+    color: $fuenteSecunadario;
+    font-size: $fuenteParrafoMovil;
+    outline: none;
+    padding: 0 15px;
+    width: 100%;
+}
+.header__buscar::placeholder{
+    color: $fuenteSecunadario;
+    
+}
+.header__buscar:hover{
+    box-shadow: $sombra;
+}
+
+@media (min-width: 992px){
+    .header__buscar{
+        font-size: $fuenteDesktopTitulo;
+    }
+}

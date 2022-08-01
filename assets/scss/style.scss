@@ -1,0 +1,93 @@
+//Esta pagina estile contiene los estilos de todos los header usados en la paginas de AluraGeek tambien
+//los estilos de las paginas index y productos. 
+//los formularios login y nuevo producto reutilizan los mismos estilos TENER PRESENTE ESTOS AL MODIFICAR.
+$fuenteTienda :'Raleway', sans-serif;
+$fondo: #202020;
+$fuentePrimario:#fff;
+$fuenteSecunadario:#c2c5aa;
+$fondoOscuro:#333533;
+$fuenteTitulosMovil: 1.1rem;
+$fuenteParrafoMovil:0.8rem;
+$sombra:2px 3px 10px 1px rgba(194,197,170,0.15);
+$fuenteDesktopTitulo: 1.3rem;
+$fuenteDesktopParrafo: 1rem;
+
+@import 'generales';
+@import 'btn';
+
+///////////////////////////////////////
+///////////  HEADER  //////////////////
+///////////////////////////////////////
+@import 'index/header/header.scss';
+@import 'index/header/header-contenedor.scss';
+@import 'index/header/header-logo.scss';
+@import 'index/header/header-contenedor-contenido.scss';
+@import 'index/header/header-link.scss';
+@import 'index/header/header-icono.scss';
+@import 'index/header/header-buscar';
+@import 'index/header/header-contenedor-buscar';
+
+///////////////////////////////////////
+///////////// BANNER //////////////////
+///////////////////////////////////////
+@import 'index/banner/banner';
+@import 'index/banner/banner-contenedor';
+@import 'index/banner/banner-titulo';
+@import 'index/banner/banner-descripcion';
+@import 'index/banner/banner-link';
+
+///////////////////////////////////////
+/////////// PRODUCTOS /////////////////
+///////////////////////////////////////
+
+@import 'index/productos/productos';
+@import 'index/productos/productos-contenedor-titulo';
+@import 'index/productos/productos-titulo';
+@import 'index/productos/productos-link';
+@import 'index/productos/productos-contenedor-card';
+@import 'index/productos/productos-card';
+@import 'index/productos/productos-card-imagen';
+@import 'index/productos/card-imagen';
+@import 'index/productos/productos-iconos';
+@import 'index/productos/productos-card-titulo';
+@import 'index/productos/productos-card-valor';
+@import 'index/productos/productos-card-link';
+
+
+///////////////////////////////////////
+/////////// CONTACTO  /////////////////
+///////////////////////////////////////
+
+@import 'index/contacto/contacto.scss';
+@import 'index/contacto/contacto-contenedor';
+@import 'index/contacto/contacto-sobre-nosotros';
+@import 'index/contacto/contacto-contenedor-logo';
+@import 'index/contacto/contacto-logo';
+@import 'index/contacto/lista-sobre-nosotros';
+@import 'index/contacto/lista-sobre-nosotros-link';
+@import 'index/contacto/lista-sobre-nosotros-item';
+@import 'index/contacto/formulario__contenedor__campos';
+@import 'index/contacto/formulario-contedor-titulo';
+@import 'index/contacto/formulario-campos';
+@import 'index/contacto/formulario-campo';
+@import 'index/contacto/contacto-formulario';
+@import 'index/contacto/formulario-contacto-error';
+
+
+///////////////////////////////////////
+///////////// FOOTER  /////////////////
+///////////////////////////////////////
+//@import 'footer';
+@import 'index/footer/footer';
+
+
+//////////////////////////////////////
+////// FORMULARIO ENVIADO ////////////
+//////////////////////////////////////
+
+@import 'index/enviado/formulario-enviado';
+@import 'index/enviado/formulario-enviado-contenedor';
+@import 'index/enviado/enviado-contenedor-imagen';
+@import 'index/enviado/enviado-imagen';
+@import 'index/enviado/enviado-contenedor-texto';
+

@@ -1,0 +1,11 @@
+.formulario__contenedor__campos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+@media (min-width: 768px){
+    .formulario__contenedor__campos{
+        width: 70%;
+        justify-content: center;
+    }
+}

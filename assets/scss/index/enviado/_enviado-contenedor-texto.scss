@@ -1,0 +1,14 @@
+.enviado__contenedor__texto{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+    color: $fuenteSecunadario;
+    font-size: $fuenteTitulosMovil;
+}
+
+@media (min-width: 768px){
+    .enviado__contenedor__texto{
+        font-size: $fuenteDesktopTitulo;
+    }
+}
