@@ -26,7 +26,7 @@ export const valida = (infoNombre, infoMensaje) => {
     }
     
     if(nombreValido && mensajeValido){
-        const enviado = window.location.href ="../../screens/formulario-enviado.html";
+        const enviado = window.location.href ="/screens/formulario-enviado.html";
         infoNombre = "";
         infoMensaje = "";
     }    
