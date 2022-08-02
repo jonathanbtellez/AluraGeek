@@ -25,7 +25,7 @@
         </div>
     </header>
     <main>
-        <section class="login">
+        <section class="login" data-section-login>
             <div class="login__contenedor contenedor">
                 <div class="contenedor__titulo">
                     <div class="login__titulo titulo">Iniciar sesion</div>
@@ -35,13 +35,11 @@
                         <label for="email" class="login__formulario__label">Correo electronico</label>
                         <input type="email" name="email" id="log-in-email" class="login__formulario__campo"
                             placeholder="Escriba su correo electronico">
+                        <span  id="formulario__error" class="formulario__contacto__error invisible"></span>
                         <label for="Contraseña" class="login__formulario__label">Contraseña</label>
                         <input type="password" name="contraseña" id="log-in-password" class="login__formulario__campo"
                             placeholder="Escriba su contraseña">
-                        <span class="login__formulario__error invisible" id="log-in-error">
-                            <p class="log__error__item" id="log-in-error-item">
-                            </p>
-                        </span>
+                        <span  id="formulario__error" class="formulario__contacto__error invisible"></span>
                         <button id="btn-log-in" type="submit" class="btn--formulario btn btn--blanco">Iniciar
                             sesion</button>
                     </form>
@@ -50,29 +48,31 @@
                     <p>
                         Aun no tienes una cuenta AluraGeek pulsa en el boton registrate y crea una nueva cuenta.
                     </p>
-                    <button id="sing_in_info" class="btn btn--blanco btn--formulario">Registrate</button>
+                    <button data-btn-singIn class="btn btn--blanco btn--formulario">Registrate</button>
                 </div>
             </div>
         </section>
 
-        <section class="registrate invisible">
+        <section class="registrate invisible" data-section-singin>
             <div class="registrate__contenedor contenedor">
                 <div class="contenedor__titulo">
                     <div class="registrate__titulo titulo">Registrate</div>
                 </div>
                 <div class="contenedor__formulario">
-                    <form class="login__formulario" id="sing_in_form">
+                    <form class="login__formulario" data-singin-form>
                         <label for="email" class="login__formulario__label">Correo electronico</label>
-                        <input type="text" name="email" id="sing_in_email" class="login__formulario__campo"
-                            placeholder="Escriba su correo electronico">
+                        <input type="text" name="email" data-singin-email class="login__formulario__campo" 
+                            placeholder="Escriba su correo electronico"></input>
+                        <span  data-singin-email-error class="formulario__contacto__error invisible">fsgdfgds</span>
                         <label for="contraseña" class="login__formulario__label">Contraseña</label>
-                        <input type="password" name="contraseña" id="" class="login__formulario__campo"
+                        <input type="password" name="contraseña" data-singin-password1 class="login__formulario__campo"
                             placeholder="Escriba su contraseña">
+                        <span  data-singin-password1-error id="formulario__error" class="formulario__contacto__error invisible"></span>
                         <label for="contraseña2" class="login__formulario__label">Contraseña</label>
-                        <input type="password" name="contraseña2" id="" class="login__formulario__campo"
+                        <input type="password" name="contraseña2" data-singin-password2 class="login__formulario__campo"
                             placeholder="Escriba su contraseña nuevamente">
-                        <button id="btn-sing-in" type="submit"
-                            class="btn--formulario btn btn--blanco">Registrate</button>
+                        <span  data-singin-password2-error id="formulario__error" class="formulario__contacto__error invisible"></span>
+                        <button id="btn-sing-in" type="submit" class="btn--formulario btn btn--blanco">Registrate</button>
                     </form>
                 </div>
             </div>
