@@ -1,5 +1,6 @@
 
-import { singInScreen, validation, singValidationForm } from "./validacion.js";
+import {  validation  } from "./validacion-contacto.js";
+import { singInScreen, singValidationForm } from "./validacion-registro.js";
 /*usa la funcion valida que comprueba el formulario contacto*/
 const formContact = document.querySelector("[data-form-contact]");
 
@@ -25,5 +26,6 @@ singInForm.addEventListener("submit", (e)=>{
     e.preventDefault();
     const singInEmail = document.querySelector("[data-singin-email]").value;
     const singInPassword1 = document.querySelector("[data-singin-password1]").value;
-    singValidationForm(singInEmail,singInPassword1);
+    const singInPassword2 = document.querySelector("[data-singin-password2]").value;
+    singValidationForm(singInEmail,singInPassword1,singInPassword2);
 })
