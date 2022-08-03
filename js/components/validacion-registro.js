@@ -11,20 +11,30 @@ export const singInScreen = (sectionLogin, sectionSingin) => {
 valida que los datos cumplan con los parametros establecidos
 si los datos son correctos le muestra al usuario el panel de acceso*/
 
-export const singValidationForm = (singInEmail, singInPassword1,singInPassword2) => {
-    testEmail(singInEmail);
-    testPassword1(singInPassword1);
-    testPassword2(testPassword1(singInPassword1),singInPassword2);
+export const singValidationForm = (singInEmail, singInPassword1, singInPassword2) => {
+    const email = testEmail(singInEmail);
+    const password = testPassword1(singInPassword1);
+    const passwordUser = testPassword2(password, singInPassword2);
 
-    if(!testPassword2(testPassword1(singInPassword1),singInPassword2) == false ||!testPassword2(testPassword1(singInPassword1),singInPassword2) == undefined ){
-        const user ={
-            email : testEmail(singInEmail),
-            password :testPassword2(testPassword1(singInPassword1),singInPassword2)
+    if (!email == false || !email == undefined) {
+        if (!passwordUser == false || !passwordUser == undefined) {
+            
+            const sectionLogin = document.querySelector("[data-section-login]");
+            const sectionSingin = document.querySelector("[data-section-singin]");
+            sectionLogin.classList.remove("invisible");
+            sectionSingin.classList.add("invisible");
+            
+            const user = {
+                email: email,
+                passwordUser: passwordUser
+            }
+            
+            return user;
+        } else {
+            throw new Error("Verifique las credenciales");
         }
-        window.location.href = "/screens/formulario-enviado.html";
-        return user;
-    }else{
-        throw new console.error("Verifique las contraseñas") 
+    } else {
+        throw new Error("Verifique las credenciales");
     }
 };
 
@@ -32,70 +42,98 @@ export const singValidationForm = (singInEmail, singInPassword1,singInPassword2)
 const testEmail = (singInEmail) => {
     const regex = /\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b/gi;
     const singInEmailFail = document.querySelector("[data-singin-email-error]");
+
     let contenido = "";
-    if(singInEmail.length == 0){
+    
+    if (singInEmail.length == 0) {
         singInEmailFail.classList.remove("invisible");
-        contenido = `<i class="fa-solid fa-triangle-exclamation"></i>El campo correo no puede estar vacia`
+        
+        contenido = `<i class="fa-solid fa-triangle-exclamation"></i> El correo no puede estar vacio.`
         singInEmailFail.innerHTML = contenido;
-    }else if (regex.test(singInEmail)) {
+
+        document.querySelector("[data-singin-email]").focus();
+    } else if (regex.test(singInEmail)) {
         singInEmailFail.classList.add("invisible");
-        const emailValide = singInEmail.toLowerCase();
         regex.test(singInEmail);
+        
+        const emailValide = singInEmail.toLowerCase();
         return emailValide;
-    }else{
+    } else {
+        document.querySelector("[data-singin-email]").value = "";
+        document.querySelector("[data-singin-email]").focus();
+
+        
         singInEmailFail.classList.remove("invisible");
-        contenido = `<i class="fa-solid fa-triangle-exclamation"></i> El correo ${singInEmail} no es valido, debe tener el siguiente formato nombre@correo.com`;
+        
+        contenido = `<i class="fa-solid fa-triangle-exclamation"></i> El correo ${singInEmail} no es valido, el correo debe tener siguiente formato nombre@correo.com`;
         singInEmailFail.innerHTML = contenido;
+        
+        return false;
     }
 }
 
 //Valida que la contraseña cuente con el formato adecuado
 
-const testPassword1 = (singInPassword1) =>{
+const testPassword1 = (singInPassword1) => {
     const regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm;
     const singInPasswordFail = document.querySelector("[data-singin-password1-error]");
+    
     let contenido = "";
-    if(singInPassword1.length == 0){
+    
+    if (singInPassword1.length == 0) {
         singInPasswordFail.classList.remove("invisible");
-        contenido = `<i class="fa-solid fa-triangle-exclamation"></i>La contraseña no puede estar vacia`
+        
+        contenido = `<i class="fa-solid fa-triangle-exclamation"></i> La contraseña no puede estar vacia`
         singInPasswordFail.innerHTML = contenido;
     }
-    else if (regex.test(singInPassword1)) {
+    else if(regex.test(singInPassword1)) {
         singInPasswordFail.classList.add("invisible");
-        const password1Valide = singInPassword1;
         regex.test(singInPassword1);
+        
+        const password1Valide = singInPassword1;
         return password1Valide;
     } else {
         singInPasswordFail.classList.remove("invisible");
+
         contenido = `La contraseña no es valida, debe tener el siguiente formato:<br>
-        <i class="fa-solid fa-triangle-exclamation"></i>Al menos 8 caracteres<br>
-        <i class="fa-solid fa-triangle-exclamation"></i>Una letra mayuscula y una minuscula<br>
-        <i class="fa-solid fa-triangle-exclamation"></i>Puede contener caracteres especiales`
+        <i class="fa-solid fa-triangle-exclamation"></i> Al menos 8 caracteres<br>
+        <i class="fa-solid fa-triangle-exclamation"></i> Una letra mayuscula y una minuscula<br>
+        <i class="fa-solid fa-triangle-exclamation"></i> Puede contener caracteres especiales`
         singInPasswordFail.innerHTML = contenido;
+
+        document.querySelector("[data-singin-password1]").value="";
+        document.querySelector("[data-singin-password1]").focus();
+
         return false;
     }
 }
 
 //comprueba que las dos contraseñas son iguales
-const testPassword2 = (password1Valide,singInPassword2) =>{
+const testPassword2 = (password1Valide, singInPassword2) => {
     const singInPasswordFail = document.querySelector("[data-singin-password2-error]");
-    let contenido = "";
     
-    if(singInPassword2.length == 0){
+    let contenido = "";
+
+    if (singInPassword2.length == 0) {
         singInPasswordFail.classList.remove("invisible");
-        contenido = `<i class="fa-solid fa-triangle-exclamation"></i>La contraseña no puede estar vacia`
+        
+        contenido = `<i class="fa-solid fa-triangle-exclamation"></i> La contraseña no puede estar vacia`
         singInPasswordFail.innerHTML = contenido;
     }
     else if (password1Valide == singInPassword2) {
         singInPasswordFail.classList.add("invisible");
+        
         const passwordUser = singInPassword2;
         return passwordUser;
     } else {
+        document.querySelector("[data-singin-password2]").value="";
+        document.querySelector("[data-singin-password2]").focus();
+
         singInPasswordFail.classList.remove("invisible");
+
         contenido = `<i class="fa-solid fa-triangle-exclamation"></i> La contraseña no es valida, debe ser igual a la contraseña anterior`
         singInPasswordFail.innerHTML = contenido;
-        const passwordFail = false;
-        return passwordFail;
+
+        return false;
     }
-    
 }

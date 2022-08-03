@@ -1,7 +1,13 @@
 .formulario__contacto__error{
-    color:$fuenteSecunadario;
-    font-size: $fuenteDesktopParrafo;
+    color:$fuenteError;
+    font-size: $fuenteParrafoMovil;
     font-weight: 400;
     margin-bottom: .5rem;
     width: 100%;
+}
+
+@media (min-width: 992px){
+    .formulario__contacto__error{
+        font-size: $fuenteDesktopParrafo;
+    }   
 }

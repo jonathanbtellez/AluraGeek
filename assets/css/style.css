@@ -429,12 +429,15 @@ body {
     padding: 2rem 0 0 0;
     justify-content: center; } }
 .formulario__contacto__error {
-  color: #c2c5aa;
-  font-size: 1rem;
+  color: #C98686;
+  font-size: 0.8rem;
   font-weight: 400;
   margin-bottom: .5rem;
   width: 100%; }
 
+@media (min-width: 992px) {
+  .formulario__contacto__error {
+    font-size: 1rem; } }
 .footer {
   width: 90%;
   margin: auto;
