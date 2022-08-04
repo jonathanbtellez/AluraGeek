@@ -17,18 +17,14 @@ export const singValidationForm = (singInEmail, singInPassword1, singInPassword2
     const passwordUser = testPassword2(password, singInPassword2);
 
     if (!email == false || !email == undefined) {
-        if (!passwordUser == false || !passwordUser == undefined) {
-            
-            const sectionLogin = document.querySelector("[data-section-login]");
-            const sectionSingin = document.querySelector("[data-section-singin]");
-            sectionLogin.classList.remove("invisible");
-            sectionSingin.classList.add("invisible");
-            
+        if (!passwordUser == false || !passwordUser == undefined) {       
             const user = {
                 email: email,
-                passwordUser: passwordUser
+                passwordUser: passwordUser,
+                estado: 0  //0 estado activo
             }
             
+            window.location.href="/screens/login.html";
             return user;
         } else {
             throw new Error("Verifique las credenciales");
@@ -89,7 +85,7 @@ const testPassword1 = (singInPassword1) => {
     else if(regex.test(singInPassword1)) {
         singInPasswordFail.classList.add("invisible");
         regex.test(singInPassword1);
-        
+
         const password1Valide = singInPassword1;
         return password1Valide;
     } else {

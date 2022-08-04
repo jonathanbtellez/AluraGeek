@@ -31,15 +31,15 @@
                     <div class="login__titulo titulo">Iniciar sesion</div>
                 </div>
                 <div class="contenedor__formulario">
-                    <form class="login__formulario" id="log-in">
+                    <form class="login__formulario" data-form-login>
                         <label for="email" class="login__formulario__label">Correo electronico</label>
-                        <input type="email" name="email" id="log-in-email" class="login__formulario__campo"
+                        <input type="text" name="email" data-login-email class="login__formulario__campo"
                             placeholder="Escriba su correo electronico">
-                        <span  id="formulario__error" class="formulario__contacto__error invisible"></span>
+                        <span  id="formulario__error"  class="formulario__contacto__error invisible"></span>
                         <label for="Contraseña" class="login__formulario__label">Contraseña</label>
-                        <input type="password" name="contraseña" id="log-in-password" class="login__formulario__campo"
+                        <input type="password" name="contraseña" data-login-password id="log-in-password" class="login__formulario__campo"
                             placeholder="Escriba su contraseña">
-                        <span  id="formulario__error" class="formulario__contacto__error invisible"></span>
+                        <span  id="formulario__error" data-login-fail class="formulario__contacto__error invisible"></span>
                         <button id="btn-log-in" type="submit" class="btn--formulario btn btn--blanco">Iniciar
                             sesion</button>
                     </form>
