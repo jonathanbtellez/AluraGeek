@@ -23,6 +23,9 @@ body {
   color: #202020;
   text-decoration: none; }
 
+.btn--rojo {
+  color: #C98686; }
+
 .btn--formulario {
   margin: auto;
   margin-bottom: 1rem;
