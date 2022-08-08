@@ -1,11 +1,18 @@
+//importando los moculos de la pagina
 import { saveUser, userViewProduct, userViewHome, validateUser, closeSeccion } from "./login-usuario.js";
+import { search } from "./search.js";
 import { validation } from "./validacion-contacto.js";
 import { singInScreen, singValidationForm } from "./validacion-registro.js";
 
-
+//llamando el objeto usuario del localStorage
 const users = JSON.parse(localStorage.getItem("user")) || [];
+
+//llamado la vista del usuario valido en home
 userViewHome(users);
+
+//llamado la vista del usuario valido en productos
 userViewProduct(users);
+
 /*usa la funcion valida que comprueba el formulario contacto*/
 const formContact = document.querySelector("[data-form-contact]");
 formContact.addEventListener("submit", (e) => {
@@ -18,7 +25,9 @@ formContact.addEventListener("submit", (e) => {
     validation(infoNombre, infoMensaje);
 });
 
-
+//Si el input search esta habilitado se una la funcion search
+const inputSearch = document.querySelector("[data-input-search]");
+if(inputSearch != undefined)search();
 
 //Permite al usuario accceder a la pantalla de registro
 const btnSingIn = document.querySelector("[data-btn-singIn]");

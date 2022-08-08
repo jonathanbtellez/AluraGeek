@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,600;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <title>AluraGeek</title>
 </head>
@@ -16,30 +17,39 @@
 <body>
     <header class="header">
         <div class="header__contenedor">
-            <div class="header__contenedor__contenido">
-                <img class="header__logo" src="../assets/img/Logo.png" alt="">
-                <a id="btn-login" href="../index.html" class="header__link btn"><i
-                        class="fa-solid fa-house-chimney header__link--icono"></i></i>HOME</a>
-            </div>
-            <div class="header__contenedor__buscar">
-                <input data-input-search type="text" class="header__buscar" name="Buscar"
-                    placeholder="Buscar en AluraGeek">
-                <i class="fa-solid fa-magnifying-glass header__icono"></i>
-                <button data-btn-leave class="header__link btn invisible"><i
-                        class="fa-solid fa-arrow-right-from-bracket btn--rojo"></i>
-                </button>
+            <div class="header__contenedor__contenido header__contenedor__contenido--login">
+                <img class="header__logo header__logo--login" src="../assets/img/Logo.png" alt="">
+                <a id="btn-login" href="productos.html" class="header__link btn"><i class="fa-solid fa-house-chimney header__link--icono"></i></i>HOME</a>
             </div>
         </div>
     </header>
-    <main>
-        <section class="productos">
-            <div class="productos__contenedor__titulo">
-                <h2 class="productos__titulo">Todos los productos</h2>
-                <a href="nuevoProducto.html" data-new-product class="btn btn--blanco invisible">Agregar producto</a>
+    <main>  
+        <section class="login">
+            <div class="login__contenedor contenedor">
+                <div class="contenedor__titulo">
+                    <div class="login__titulo titulo">Edita la informacion del producto</div>
+                </div>
+                <div class="contenedor__formulario">
+                    <form class="login__formulario" data-form-edit>
+                        <label for="link_imagen" class="login__formulario__label">Url de la imagen.</label>
+                        <input required data-url type="url" name="link_imagen" id="" class="login__formulario__campo" placeholder="Ingrese la url de la imagen">
+                        <label for="categoria" class="login__formulario__label">Url de la imagen.</label>
+                        <select required class="login__formulario__campo" name="categoria" id="categoria" data-categoria>
+                            <option value="one_piece" class="formulario__campo__item">One piece</option>
+                            <option value="console" class="formulario__campo__item">Ps5</option>
+                            <option value="diversos" class="formulario__campo__item">Diversos</option>
+                        </select>
+                        <label for="nombre_producto" class="login__formulario__label">Nombre del producto</label>
+                        <input required data-nombre type="text" name="nombre_producto" id="" class="login__formulario__campo" placeholder="Escriba el nombre del producto">
+                        <label for="valor_producto" class="login__formulario__label">Valor del producto</label>
+                        <input required data-valor type="text" name="valor_producto" id="" class="login__formulario__campo" placeholder="99.900">
+                        <label for="descripcion_producto"class="login__formulario__label">Descripcion del producto</label>
+                        <textarea required data-descripcion name="descripcion_producto" id="" class="login__formulario__campo campo--textarea" placeholder="Ingrese una breve descripcion"></textarea>
+                        <button type="submit" class="btn--formulario btn btn--blanco">Agregar producto</button>
+                        
+                    </form>
+                </div>
             </div>
-            <div class="productos__contenedor__card" data-product></div>
-            <div class="productos__contenedor__card" data-product></div>
-            <div class="productos__contenedor__card" data-product></div>
         </section>
         <section class="contacto">
             <div class="contacto__contenedor">
@@ -76,11 +86,12 @@
                         <form class="formulario__campos" data-form-contact>
                             <label for="nombre">Nombre</label>
                             <input type="text" name="nombre" id="input" class="formulario__campo formulario--input"
-                                placeholder="Ingresa tu nombre" data-contact-nombre>
+                                placeholder="Ingresa tu nombre"  data-contact-nombre>
                             <label for="mensaje">Mensaje</label>
                             <textarea name="mensaje" id="input" class="formulario__campo formulario--textarea"
-                                placeholder="Ingresa tu mensaje" data-contact-mensaje></textarea>
-                            <span id="formulario__contacto__error" class="formulario__contacto__error invisible"></span>
+                                 placeholder="Ingresa tu mensaje"  data-contact-mensaje
+                                ></textarea>
+                            <span  id="formulario__contacto__error" class="formulario__contacto__error invisible"></span>
                             <button type="submit" class="btn--formulario btn btn--blanco">Enviar mensaje</button>
                         </form>
                     </div>
@@ -91,9 +102,9 @@
     <footer class="footer">
         <p class="footer__parrafo">Creado por &copy; Jonathan Tellez 2022</p>
     </footer>
-
     <script src="https://kit.fontawesome.com/c88268524c.js" crossorigin="anonymous"></script>
-    <script type="module" src="/js/controllers/client_controller.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="../js/controllers/edit_controller.js"></script>
     <script type="module" src="../js/components/principal.js"></script>
 </body>
 

@@ -1,0 +1,83 @@
+{
+  "perfil": [
+    {
+      "nombre": "Jonathan  Tellez",
+      "email": "UserMsComunidad1057@senaedu.edu.co",
+      "id": "bf7bdff2-51c1-4c0b-aa48-b262d29a5c9d"
+    }
+  ],
+  "producto": [
+    {
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlQNK6tGEYfMLIqQsQ5q89S7xe-b0Y1qSDSw&usqp=CAU",
+      "nombre": "Figura Portgas D. Ace",
+      "precio": "$69.900",
+      "descripcion": "Nuevo comentario",
+      "categoria": "one_piece",
+      "id": 1
+    },
+    {
+      "url": "https://ae01.alicdn.com/kf/H63104fcebe8f4c9f8bf36921a98069e0w/Anime-One-Piece-zoro-juguete-de-modelo-de-figura-dos-a-os-m-s-tarde-Roronoa.jpg_Q90.jpg_.webp",
+      "nombre": "Figura Zoro Roronoa",
+      "precio": "$99.900",
+      "descripcion": "undefined",
+      "categoria": "one_piece",
+      "id": 3
+    },
+    {
+      "url": "https://img.joomcdn.net/777f6d34aaa13e771418570054725d18cf205991_1024_1024.jpeg",
+      "nombre": "Figura Vinsmoke Sanji",
+      "precio": "$129.900",
+      "id": 4,
+      "description": "Esta en una descripcion de un producto de prueba",
+      "categoria": "one_piece"
+    },
+    {
+      "url": "http://cdn.shopify.com/s/files/1/0095/6910/8015/products/OnePiece_WorldFigureColosseumVol.2FigureShanks.jpg?v=1639708038",
+      "nombre": "Figura Akagami no shanks",
+      "precio": "$149.900",
+      "id": 5,
+      "description": "Esta en una descripcion de un producto de prueba",
+      "categoria": "one_piece"
+    },
+    {
+      "url": "https://exitocol.vtexassets.com/arquivos/ids/9154827/consola-sony-playstation-5-ps5-825gb-lector-de-disco.jpg?v=637631028231230000",
+      "nombre": "Consola Playstation 5",
+      "precio": "$3.229.900",
+      "id": 7,
+      "description": "Esta en una descripcion de un producto de prueba",
+      "categoria": "console"
+    },
+    {
+      "url": "https://kurogami.com/img/productos/42/85/figura-deku-izuku-midoriya-my-hero-academia-world-heroes-mission-the-amazing-heroes-01.jpg",
+      "nombre": "Figura Izuku Midotiya BnH",
+      "precio": "$129.900",
+      "id": 8,
+      "description": "Esta en una descripcion de un producto de prueba",
+      "categoria": "diversos"
+    },
+    {
+      "url": "https://areajugones.sport.es/wp-content/uploads/2019/06/WechatIMG3102__35074.1560604659-1024x1024.jpg",
+      "nombre": "Figura Saitama One Punch-Man",
+      "precio": "$120.000",
+      "id": "cd671ee2-e47d-462f-a348-1630c145f7ba",
+      "descripcion": "Saitama",
+      "categoria": "diversos"
+    },
+    {
+      "url": "https://takkuden.com/wp-content/uploads/2021/11/FIGURA-DE-ACCI-N-DE-Attack-on-Titan-Artfx-J-213-417-375-Yeager-Eren-207.jpg_640x640.jpg",
+      "nombre": "Levi Ackerman  SnK",
+      "precio": "$99.900",
+      "descripcion": "comentario de prueba",
+      "categoria": "diversos",
+      "id": "c553feae-81e0-4478-b05b-bc20ed865fb3"
+    },
+    {
+      "url": "https://i.pinimg.com/736x/7f/6b/c1/7f6bc1a58d6263090c3cebc14f664573.jpg",
+      "nombre": "Zoro Roronoa One Piece",
+      "precio": "$69.900",
+      "descripcion": "undefined",
+      "categoria": "one_piece",
+      "id": "c238bed7-0097-4599-ba55-f62f840651ee"
+    }
+  ]
+}

@@ -22,7 +22,7 @@
                         class="fa-solid fa-user-tie header__link--icono"></i> LOGIN</a>
             </div>
             <div class="header__contenedor__buscar" >
-                <input type="text" class="header__buscar" name="Buscar" placeholder="Buscar en AluraGeek">
+                <input data-input-search type="text" class="header__buscar" name="Buscar" placeholder="Buscar en AluraGeek">
                 <i class="fa-solid fa-magnifying-glass header__icono"></i>
             </div>
         </div>
@@ -30,7 +30,7 @@
 
 
     <main>
-        <section class="banner">
+        <section class="banner" data-banner>
             <div class="banner__contenedor">
                 <h2 class="banner__titulo">
                     Agosto Promocional
@@ -40,172 +40,24 @@
             </div>
         </section>
         <section class="productos">
-            <div class="productos__contenedor__titulo">
+            <div class="productos__contenedor__titulo" >
                 <h2 class="productos__titulo">One piece</h2>
                 <a href="screens/productos.html" class="productos__link">Ver todo <i
                         class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="productos__contenedor__card">
-                <div class="productos__card">
-                    <div class="productos__card__imagen">
-                        <img class="card__imagen" src="assets/img/Portgas.jpg" alt="Portgas D. Ace">
-                    </div>
-                    <h2 class="productos__card__titulo">Figura Portgas D. Ace</h2>
-                    <p class="productos__card__valor">$69.900</p>
-                    <a href="#" class="productos__card__link">Ver producto</a>
-                </div>
-                <div class="productos__card">
-                    <div class="productos__card__imagen">
-                        <img class="card__imagen" src="assets/img/luffy.jpg" alt="Monkey D. Luffy">
-                    </div>
-                    <h2 class="productos__card__titulo">Figura Monkey D. Luffy</h2>
-                    <p class="productos__card__valor">$89.900</p>
-                    <a href="#" class="productos__card__link">Ver producto</a>
-                </div>
-                <div class="productos__card">
-                    <div class="productos__card__imagen">
-                        <img class="card__imagen" src="assets/img/Zoro.jpg" alt="Monkey D. Luffy">
-                    </div>
-                    <h2 class="productos__card__titulo">Figura Zoro Roronoha</h2>
-                    <p class="productos__card__valor">$85.900</p>
-                    <a href="#" class="productos__card__link">Ver producto</a>
-                </div>
-                <div class="productos__card">
-                    <div class="productos__card__imagen">
-                        <img src="assets/img/Sanji.jpg" alt="Vinsmoke Sanji" class="card__imagen">
-                    </div>
-                    <h2 class="productos__card__titulo">Figura Vinsmoke Sanji</h2>
-                    <p class="productos__card__valor">$129.900</p>
-                    <a href="#" class="productos__card__link">Ver producto</a>
-                </div>
-                <div class="productos__card productos--ocultos">
-                    <div class="productos__card__imagen">
-                        <img class="card__imagen" src="assets/img/shanks.jpg" alt="Shanks Figura">
-                    </div>
-                    <h2 class="productos__card__titulo">Figura shanks y Luffy</h2>
-                    <p class="productos__card__valor">$489.900</p>
-                    <a href="#" class="productos__card__link">Ver producto</a>
-                </div>
-                <div class="productos__card productos--ocultos">
-                    <div class="productos__card__imagen">
-                        <img class="card__imagen" src="assets/img/jacketace.jpg" alt="Jacket Portgas D. Ace">
-                    </div>
-                    <h2 class="productos__card__titulo">Jacket Portgas D. Ace</h2>
-                    <p class="productos__card__valor">$99.900</p>
-                    <a href="#" class="productos__card__link">Ver producto</a>
-                </div>
-            </div>
+            <div class="productos__contenedor__card" data-product-onePiece></div>
             <div class="productos__contenedor__titulo">
-                <h2 class="productos__titulo">PS5</h2>
+                <h2 class="productos__titulo">Consolas y accesorios</h2>
                 <a href="screens/productos.html" class="productos__link">Ver todo <i
                         class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="productos__contenedor__card">
-                <div class="productos__card">
-                    <div class="productos__card__imagen">
-                        <img class="card__imagen" src="assets/img/ps5.jpg" alt="Play Station 5">
-                    </div>
-                    <h2 class="productos__card__titulo">Consola Play Station 5</h2>
-                    <p class="productos__card__valor">$3.669.900</p>
-                    <a href="#" class="productos__card__link">Ver producto</a>
-                </div>
-                <div class="productos__card">
-                    <div class="productos__card__imagen">
-                        <img class="card__imagen" src="assets/img/mandoPS5.jpg" alt="Mando inhalambrico PS5">
-                    </div>
-                    <h2 class="productos__card__titulo">Mando inhalambrico PS5</h2>
-                    <p class="productos__card__valor">$389.900</p>
-                    <a href="#" class="productos__card__link">Ver producto</a>
-                </div>
-                <div class="productos__card">
-                    <div class="productos__card__imagen">
-                        <img class="card__imagen" src="assets/img/DiademaPS5.jpg" alt="Diadema Ps5">
-                    </div>
-                    <h2 class="productos__card__titulo">Diadema inalambrica Ps5</h2>
-                    <p class="productos__card__valor">$499.900</p>
-                    <a href="#" class="productos__card__link">Ver producto</a>
-                </div>
-                <div class="productos__card">
-                    <div class="productos__card__imagen">
-                        <img src="assets/img/fifaPs5.jpg" alt="Juego Fifa 2022 Ps5" class="card__imagen">
-                    </div>
-                    <h2 class="productos__card__titulo"> Juego para Ps5 Fifa ps5</h2>
-                    <p class="productos__card__valor">$129.900</p>
-                    <a href="#" class="productos__card__link">Ver producto</a>
-                </div>
-                <div class="productos__card productos--ocultos">
-                    <div class="productos__card__imagen">
-                        <img class="card__imagen" src="assets/img/Dsouls.jpg" alt="Demon Soul">
-                    </div>
-                    <h2 class="productos__card__titulo">Demon's souls juego Ps5</h2>
-                    <p class="productos__card__valor">$109.900</p>
-                    <a href="#" class="productos__card__link">Ver producto</a>
-                </div>
-                <div class="productos__card productos--ocultos">
-                    <div class="productos__card__imagen">
-                        <img class="card__imagen" src="assets/img/Horizon.jpg" alt="Horizon">
-                    </div>
-                    <h2 class="productos__card__titulo">Horizon juego ps5</h2>
-                    <p class="productos__card__valor">$139.900</p>
-                    <a href="#" class="productos__card__link">Ver producto</a>
-                </div>
-            </div>
+            <div class="productos__contenedor__card" data-product-consoles></div>
             <div class="productos__contenedor__titulo">
                 <h2 class="productos__titulo">Diversos</h2>
                 <a href="screens/productos.html" class="productos__link">Ver todo <i
                         class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="productos__contenedor__card">
-                <div class="productos__card">
-                    <div class="productos__card__imagen">
-                        <img class="card__imagen" src="assets/img/charizard.jpg" alt="Muñeco de peluche Charizard">
-                    </div>
-                    <h2 class="productos__card__titulo">Muñeco de peluche Charizard</h2>
-                    <p class="productos__card__valor">$69.900</p>
-                    <a href="#" class="productos__card__link">Ver producto</a>
-                </div>
-                <div class="productos__card">
-                    <div class="productos__card__imagen">
-                        <img class="card__imagen" src="assets/img/levi.jpg" alt="Levi Ackerman SNK">
-                    </div>
-                    <h2 class="productos__card__titulo">Levi Ackerman Attack On Titan</h2>
-                    <p class="productos__card__valor">$159.900</p>
-                    <a href="#" class="productos__card__link">Ver producto</a>
-                </div>
-                <div class="productos__card">
-                    <div class="productos__card__imagen">
-                        <img class="card__imagen" src="assets/img/batysuper.jpg"
-                            alt="Pack de 2 Figuras Batman and Superman">
-                    </div>
-                    <h2 class="productos__card__titulo">Pack de 2 Batman and Superman</h2>
-                    <p class="productos__card__valor">$269.900</p>
-                    <a href="#" class="productos__card__link">Ver producto</a>
-                </div>
-                <div class="productos__card">
-                    <div class="productos__card__imagen">
-                        <img src="assets/img/joker.jpg" alt="Joker Edicion Limitada" class="card__imagen">
-                    </div>
-                    <h2 class="productos__card__titulo">Joker Edicion Limitada</h2>
-                    <p class="productos__card__valor">$122.900</p>
-                    <a href="#" class="productos__card__link">Ver producto</a>
-                </div>
-                <div class="productos__card productos--ocultos">
-                    <div class="productos__card__imagen">
-                        <img class="card__imagen" src="assets/img/touya.jpg" alt="Touya Todoriki">
-                    </div>
-                    <h2 class="productos__card__titulo">Figura Touya Todoroki</h2>
-                    <p class="productos__card__valor">129.900</p>
-                    <a href="#" class="productos__card__link">Ver producto</a>
-                </div>
-                <div class="productos__card productos--ocultos">
-                    <div class="productos__card__imagen">
-                        <img class="card__imagen" src="assets/img/izuku.jpg" alt="Izuku Midoriya">
-                    </div>
-                    <h2 class="productos__card__titulo">Figura Izuku Midoriya</h2>
-                    <p class="productos__card__valor">$69.900</p>
-                    <a href="#" class="productos__card__link">Ver producto</a>
-                </div>
-            </div>
+            <div class="productos__contenedor__card" data-product-varieties>
         </section>
         <section class="contacto">
             <div class="contacto__contenedor">
@@ -259,6 +111,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/c88268524c.js" crossorigin="anonymous"></script>
+    <script type="module" src="/js/controllers/client_controller.js"></script>
     <script type="module" src="js/components/principal.js"></script>
 </body>
 

@@ -30,21 +30,21 @@
                     <div class="login__titulo titulo">Agregar nuevo producto</div>
                 </div>
                 <div class="contenedor__formulario">
-                    <form class="login__formulario">
+                    <form class="login__formulario" data-form-products>
                         <label for="link_imagen" class="login__formulario__label">Url de la imagen.</label>
-                        <input type="url" name="link_imagen" id="" class="login__formulario__campo" placeholder="Ingrese la url de la imagen">
+                        <input required data-url type="url" name="link_imagen" id="" class="login__formulario__campo" placeholder="Ingrese la url de la imagen">
                         <label for="categoria" class="login__formulario__label">Url de la imagen.</label>
-                        <select class="login__formulario__campo" name="categoria" id="categoria">
-                            <option value="onepiece" class="formulario__campo__item">One piece</option>
-                            <option value="ps5" class="formulario__campo__item">Ps5</option>
+                        <select required class="login__formulario__campo" name="categoria" id="categoria" data-categoria>
+                            <option value="one_piece" class="formulario__campo__item">One piece</option>
+                            <option value="console" class="formulario__campo__item">Ps5</option>
                             <option value="diversos" class="formulario__campo__item">Diversos</option>
                         </select>
                         <label for="nombre_producto" class="login__formulario__label">Nombre del producto</label>
-                        <input type="text" name="nombre_producto" id="" class="login__formulario__campo" placeholder="Escriba el nombre del producto">
+                        <input required data-nombre type="text" name="nombre_producto" id="" class="login__formulario__campo" placeholder="Escriba el nombre del producto">
                         <label for="valor_producto" class="login__formulario__label">Valor del producto</label>
-                        <input type="number" name="valor_producto" id="" class="login__formulario__campo" placeholder="99.900">
+                        <input required data-valor type="text" name="valor_producto" id="" class="login__formulario__campo" placeholder="99.900">
                         <label for="descripcion_producto"class="login__formulario__label">Descripcion del producto</label>
-                        <textarea name="descripcion_producto" id="" class="login__formulario__campo campo--textarea" placeholder="Ingrese una breve descripcion"></textarea>
+                        <textarea required data-descripcion name="descripcion_producto" id="" class="login__formulario__campo campo--textarea" placeholder="Ingrese una breve descripcion"></textarea>
                         <button type="submit" class="btn--formulario btn btn--blanco">Agregar producto</button>
                         
                     </form>
@@ -103,6 +103,8 @@
         <p class="footer__parrafo">Creado por &copy; Jonathan Tellez 2022</p>
     </footer>
     <script src="https://kit.fontawesome.com/c88268524c.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="../js/controllers/sign_controller.js"></script>
     <script type="module" src="../js/components/principal.js"></script>
 </body>
 
