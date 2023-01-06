@@ -12,3 +12,11 @@ Para ello están pidiendo nuestra ayuda como desarrolladores, el e-commerce debe
 - Menú de administrador para que puedan agregar, editar, buscar o eliminar productos de la tienda.
 
 Es muy importante que el sitio sea adaptable para que los clientes puedan comprar fácilmente a través de dispositivos móviles.
+
+## Importante
+Para poder visualizar la información contenida en el archivo db.json
+
+Hacer un fork del proyecto ejecutar en el terminal 
+En el directorio de nuestro proyecto el siguiente comando
+json-server-watch db.json
+Este nos permitirá comentarnos al http://localhost/3000 servidor al cuál se está haciendo el fetch que da como respuesta la información 
